@@ -1,0 +1,11 @@
+//////////////////////////////////////////
+//
+// NOTE: This is *not* a valid shader file
+//
+///////////////////////////////////////////
+Shader "Hidden/Nature/Terrain/Utilities" {
+Properties {
+}
+SubShader {
+}
+}

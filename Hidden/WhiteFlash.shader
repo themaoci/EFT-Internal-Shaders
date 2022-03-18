@@ -1,0 +1,33 @@
+//////////////////////////////////////////
+//
+// NOTE: This is *not* a valid shader file
+//
+///////////////////////////////////////////
+Shader "Hidden/WhiteFlash" {
+Properties {
+_MainTex ("_MainTex", 2D) = "white" { }
+_Coef ("_Coef", Float) = 1
+}
+SubShader {
+ Pass {
+  ZTest Always
+  ZWrite Off
+  Cull Off
+  Fog {
+   Mode Off
+  }
+  GpuProgramID 52664
+Program "vp" {
+SubProgram "d3d11 " {
+"// shader disassembly not supported on DXBC"
+}
+}
+Program "fp" {
+SubProgram "d3d11 " {
+"// shader disassembly not supported on DXBC"
+}
+}
+}
+}
+Fallback "Diffuse"
+}
